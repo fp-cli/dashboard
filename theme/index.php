@@ -7,14 +7,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WP-CLI Contributor Dashboard</title>
+<title>FP-CLI Contributor Dashboard</title>
 
 <style>
 <?php echo file_get_contents( __DIR__ . '/assets/style.css' ); ?>
 </style>
 
-<link rel="icon" type="image/x-icon" href="https://wp-cli.org/assets/img/favicon.jpg" />
-<link rel="shortcut icon" href="https://wp-cli.org/assets/img/favicon.jpg" />
+<link rel="icon" type="image/x-icon" href="https://fp-cli.org/assets/img/favicon.jpg" />
+<link rel="shortcut icon" href="https://fp-cli.org/assets/img/favicon.jpg" />
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
@@ -24,8 +24,8 @@
 <body>
 
 	<header class="container">
-		<h1>WP-CLI Contributor Dashboard</h1>
-		<p>Dashboard is rebuilt every 20 minutes. <a href="https://github.com/wp-cli/dashboard/issues" target="_blank">Create an issue</a> to suggest an improvement.</p>
+		<h1>FP-CLI Contributor Dashboard</h1>
+		<p>Dashboard is rebuilt every 20 minutes. <a href="https://github.com/fp-cli/dashboard/issues" target="_blank">Create an issue</a> to suggest an improvement.</p>
 	</header>
 
 	<main class="container">
@@ -34,7 +34,7 @@
 
 		<div class="grid">
 			<?php
-			$github_data = wp_cli_dashboard_get_config_data( 'github_data' );
+			$github_data = fp_cli_dashboard_get_config_data( 'github_data' );
 			?>
 			<?php
 				$sort_order = array(
@@ -59,7 +59,7 @@
 				?>
 				<div class="grid-cell">
 					<h3><a href="<?php echo $link; ?>" target="_blank"><?php echo $metric['label']; ?></a></h3>
-					<?php echo wp_cli_dashboard_get_template_part( 'parts/github-chart', array( 'key' => $key ) ); ?>
+					<?php echo fp_cli_dashboard_get_template_part( 'parts/github-chart', array( 'key' => $key ) ); ?>
 				</div>
 			<?php endforeach; ?>
 
@@ -73,7 +73,7 @@
 				<?php
 				$new_contributors  = [];
 				$new_contrib_users = [];
-				foreach ( glob( WP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
+				foreach ( glob( FP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
 					$contributor = basename( $file );
 					$dates       = explode( PHP_EOL, file_get_contents( $file ) );
 					$is_new      = false;
@@ -101,7 +101,7 @@
 				for ( $i = 0; $i < 12; $i++ ) {
 					$new_contributors[ gmdate( 'Y-m', strtotime( '-' . $i . ' months' ) ) ] = [];
 				}
-				foreach ( glob( WP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
+				foreach ( glob( FP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
 					$contributor   = basename( $file );
 					$dates         = explode( PHP_EOL, file_get_contents( $file ) );
 					foreach ( $dates as $date ) {
@@ -143,7 +143,7 @@
 				<h3>Active Contributors (Past 30 Days)</h3>
 				<?php
 				$active_contributors = [];
-				foreach ( glob( WP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
+				foreach ( glob( FP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
 					$contributor = basename( $file );
 					if ( in_array( $contributor, $new_contrib_users, true ) ) {
 						continue;
@@ -170,7 +170,7 @@
 				for ( $i = 0; $i < 12; $i++ ) {
 					$active_contributors[ gmdate( 'Y-m', strtotime( '-' . $i . ' months' ) ) ] = [];
 				}
-				foreach ( glob( WP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
+				foreach ( glob( FP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
 					$contributor = basename( $file );
 					if ( in_array( $contributor, $all_new_contribs, true ) ) {
 						continue;
@@ -219,12 +219,12 @@
 			</thead>
 			<tbody>
 			<?php
-			$github_repositories = wp_cli_dashboard_get_config_data( 'github_repositories' );
+			$github_repositories = fp_cli_dashboard_get_config_data( 'github_repositories' );
 			?>
 			<?php
 				foreach ( $github_repositories as $repo ) :
-					$repo_short = str_replace( 'wp-cli/', '', $repo );
-					$repo_data = json_decode( file_get_contents( WP_CLI_DASHBOARD_BASE_DIR . '/github-data/repositories/' . $repo_short . '.json' ), true );
+					$repo_short = str_replace( 'fp-cli/', '', $repo );
+					$repo_data = json_decode( file_get_contents( FP_CLI_DASHBOARD_BASE_DIR . '/github-data/repositories/' . $repo_short . '.json' ), true );
 				?>
 				<tr>
 					<td><a href="<?php echo sprintf( 'https://github.com/%s', $repo ); ?>" target="_blank"><?php echo $repo; ?></a></td>
@@ -250,7 +250,7 @@
 						</ul>
 					</td>
 					<td>
-						<?php if ( 'wp-cli/wp-cli-dev' !== $repo ) : ?>
+						<?php if ( 'fp-cli/fp-cli-dev' !== $repo ) : ?>
 							<a href="<?php echo sprintf( 'https://github.com/%s/actions/workflows/testing.yml', $repo ); ?>" target="_blank"><img height="20px" src="<?php echo sprintf( 'https://github.com/%s/actions/workflows/testing.yml/badge.svg', $repo ); ?>" alt="Testing" style="max-width: 100%;"></a>
 						<?php endif; ?>
 					</td>

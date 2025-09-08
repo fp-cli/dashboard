@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WP-CLI Contributor Dashboard</title>
+<title>FP-CLI Contributor Dashboard</title>
 
 <style>
 /* General Body Styles */
@@ -294,8 +294,8 @@ footer.container {
 }
 </style>
 
-<link rel="icon" type="image/x-icon" href="https://wp-cli.org/assets/img/favicon.jpg" />
-<link rel="shortcut icon" href="https://wp-cli.org/assets/img/favicon.jpg" />
+<link rel="icon" type="image/x-icon" href="https://fp-cli.org/assets/img/favicon.jpg" />
+<link rel="shortcut icon" href="https://fp-cli.org/assets/img/favicon.jpg" />
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
@@ -305,8 +305,8 @@ footer.container {
 <body>
 
 	<header class="container">
-		<h1>WP-CLI Contributor Dashboard</h1>
-		<p>Dashboard is rebuilt every 20 minutes. <a href="https://github.com/wp-cli/dashboard/issues" target="_blank">Create an issue</a> to suggest an improvement.</p>
+		<h1>FP-CLI Contributor Dashboard</h1>
+		<p>Dashboard is rebuilt every 20 minutes. <a href="https://github.com/fp-cli/dashboard/issues" target="_blank">Create an issue</a> to suggest an improvement.</p>
 	</header>
 
 	<main class="container">
@@ -315,7 +315,7 @@ footer.container {
 
 		<div class="grid">
 										<div class="grid-cell">
-					<h3><a href="https://github.com/issues?q=is%3Aopen%20sort%3Aupdated-desc%20org%3Awp-cli%20is%3Apr%20team-review-requested%3Awp-cli%2Fcommitters" target="_blank">Open Pull Requests Awaiting Review</a></h3>
+					<h3><a href="https://github.com/issues?q=is%3Aopen%20sort%3Aupdated-desc%20org%3Afp-cli%20is%3Apr%20team-review-requested%3Afp-cli%2Fcommitters" target="_blank">Open Pull Requests Awaiting Review</a></h3>
 					<div id="open_pull_requests_awaiting_review"></div>
 <script>
 new Chartist.Line('#open_pull_requests_awaiting_review', {
@@ -329,7 +329,7 @@ new Chartist.Line('#open_pull_requests_awaiting_review', {
 </script>
 				</div>
 							<div class="grid-cell">
-					<h3><a href="https://github.com/issues?q=is%3Aopen%20sort%3Aupdated-desc%20org%3Awp-cli%20is%3Apr" target="_blank">Open Pull Requests</a></h3>
+					<h3><a href="https://github.com/issues?q=is%3Aopen%20sort%3Aupdated-desc%20org%3Afp-cli%20is%3Apr" target="_blank">Open Pull Requests</a></h3>
 					<div id="open_pull_requests"></div>
 <script>
 new Chartist.Line('#open_pull_requests', {
@@ -343,7 +343,7 @@ new Chartist.Line('#open_pull_requests', {
 </script>
 				</div>
 							<div class="grid-cell">
-					<h3><a href="https://github.com/issues?q=is%3Aopen%20org%3Awp-cli%20is%3Aissue%20sort%3Acreated-desc%20no%3Alabel" target="_blank">Open Issues Without Label</a></h3>
+					<h3><a href="https://github.com/issues?q=is%3Aopen%20org%3Afp-cli%20is%3Aissue%20sort%3Acreated-desc%20no%3Alabel" target="_blank">Open Issues Without Label</a></h3>
 					<div id="open_issues_no_label"></div>
 <script>
 new Chartist.Line('#open_issues_no_label', {
@@ -357,7 +357,7 @@ new Chartist.Line('#open_issues_no_label', {
 </script>
 				</div>
 							<div class="grid-cell">
-					<h3><a href="https://github.com/issues?q=is%3Aopen%20org%3Awp-cli%20is%3Aissue%20sort%3Aupdated-desc" target="_blank">Open Issues</a></h3>
+					<h3><a href="https://github.com/issues?q=is%3Aopen%20org%3Afp-cli%20is%3Aissue%20sort%3Aupdated-desc" target="_blank">Open Issues</a></h3>
 					<div id="open_issues"></div>
 <script>
 new Chartist.Line('#open_issues', {
@@ -371,7 +371,7 @@ new Chartist.Line('#open_issues', {
 </script>
 				</div>
 							<div class="grid-cell">
-					<h3><a href="https://github.com/issues?q=is%3Aopen%20org%3Awp-cli%20is%3Aissue%20sort%3Acreated-desc%20label%3Abug" target="_blank">Open Bugs</a></h3>
+					<h3><a href="https://github.com/issues?q=is%3Aopen%20org%3Afp-cli%20is%3Aissue%20sort%3Acreated-desc%20label%3Abug" target="_blank">Open Bugs</a></h3>
 					<div id="open_issues_label_bug"></div>
 <script>
 new Chartist.Line('#open_issues_label_bug', {
@@ -385,7 +385,7 @@ new Chartist.Line('#open_issues_label_bug', {
 </script>
 				</div>
 							<div class="grid-cell">
-					<h3><a href="https://github.com/issues?q=is%3Aopen%20org%3Awp-cli%20is%3Aissue%20sort%3Acreated-desc%20label%3Agood-first-issue" target="_blank">Good First Issues</a></h3>
+					<h3><a href="https://github.com/issues?q=is%3Aopen%20org%3Afp-cli%20is%3Aissue%20sort%3Acreated-desc%20label%3Agood-first-issue" target="_blank">Good First Issues</a></h3>
 					<div id="open_issues_good_first_issue"></div>
 <script>
 new Chartist.Line('#open_issues_good_first_issue', {
@@ -454,781 +454,781 @@ new Chartist.Line('#open_issues_good_first_issue', {
 			</thead>
 			<tbody>
 										<tr>
-					<td><a href="https://github.com/wp-cli/automated-tests" target="_blank">wp-cli/automated-tests</a></td>
+					<td><a href="https://github.com/fp-cli/automated-tests" target="_blank">fp-cli/automated-tests</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/automated-tests/issues" target="_blank">1 issues</a>, <a href="https://github.com/wp-cli/automated-tests/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/automated-tests/issues" target="_blank">1 issues</a>, <a href="https://github.com/fp-cli/automated-tests/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/automated-tests/releases/tag/v2.0.2" target="_blank">v2.0.2</a>
+																	<a href="https://github.com/fp-cli/automated-tests/releases/tag/v2.0.2" target="_blank">v2.0.2</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/automated-tests/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/automated-tests/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/automated-tests/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/automated-tests/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/admin-command" target="_blank">wp-cli/admin-command</a></td>
+					<td><a href="https://github.com/fp-cli/admin-command" target="_blank">fp-cli/admin-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/admin-command/issues" target="_blank">1 issues</a>, <a href="https://github.com/wp-cli/admin-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/admin-command/issues" target="_blank">1 issues</a>, <a href="https://github.com/fp-cli/admin-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/admin-command/milestone/6" target="_blank">v2.0.5</a> (0 open, 4 closed)
+																	<a href="https://github.com/fp-cli/admin-command/milestone/6" target="_blank">v2.0.5</a> (0 open, 4 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/admin-command/releases/tag/v2.0.4" target="_blank">v2.0.4</a>
+																	<a href="https://github.com/fp-cli/admin-command/releases/tag/v2.0.4" target="_blank">v2.0.4</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/admin-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/admin-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/admin-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/admin-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/cache-command" target="_blank">wp-cli/cache-command</a></td>
+					<td><a href="https://github.com/fp-cli/cache-command" target="_blank">fp-cli/cache-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/cache-command/issues" target="_blank">2 issues</a>, <a href="https://github.com/wp-cli/cache-command/pulls" target="_blank">1 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/cache-command/issues" target="_blank">2 issues</a>, <a href="https://github.com/fp-cli/cache-command/pulls" target="_blank">1 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/cache-command/milestone/24" target="_blank">v2.2.1</a> (0 open, 3 closed)
+																	<a href="https://github.com/fp-cli/cache-command/milestone/24" target="_blank">v2.2.1</a> (0 open, 3 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/cache-command/releases/tag/v2.2.0" target="_blank">v2.2.0</a>
+																	<a href="https://github.com/fp-cli/cache-command/releases/tag/v2.2.0" target="_blank">v2.2.0</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/cache-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/cache-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/cache-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/cache-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/checksum-command" target="_blank">wp-cli/checksum-command</a></td>
+					<td><a href="https://github.com/fp-cli/checksum-command" target="_blank">fp-cli/checksum-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/checksum-command/issues" target="_blank">5 issues</a>, <a href="https://github.com/wp-cli/checksum-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/checksum-command/issues" target="_blank">5 issues</a>, <a href="https://github.com/fp-cli/checksum-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/checksum-command/milestone/30" target="_blank">v2.3.2</a> (0 open, 3 closed)
+																	<a href="https://github.com/fp-cli/checksum-command/milestone/30" target="_blank">v2.3.2</a> (0 open, 3 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/checksum-command/releases/tag/v2.3.1" target="_blank">v2.3.1</a>
+																	<a href="https://github.com/fp-cli/checksum-command/releases/tag/v2.3.1" target="_blank">v2.3.1</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/checksum-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/checksum-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/checksum-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/checksum-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/config-command" target="_blank">wp-cli/config-command</a></td>
+					<td><a href="https://github.com/fp-cli/config-command" target="_blank">fp-cli/config-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/config-command/issues" target="_blank">13 issues</a>, <a href="https://github.com/wp-cli/config-command/pulls" target="_blank">1 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/config-command/issues" target="_blank">13 issues</a>, <a href="https://github.com/fp-cli/config-command/pulls" target="_blank">1 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/config-command/milestone/38" target="_blank">v2.4.0</a> (0 open, 3 closed)
+																	<a href="https://github.com/fp-cli/config-command/milestone/38" target="_blank">v2.4.0</a> (0 open, 3 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/config-command/releases/tag/v2.3.8" target="_blank">v2.3.8</a>
+																	<a href="https://github.com/fp-cli/config-command/releases/tag/v2.3.8" target="_blank">v2.3.8</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/config-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/config-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/config-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/config-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/core-command" target="_blank">wp-cli/core-command</a></td>
+					<td><a href="https://github.com/fp-cli/core-command" target="_blank">fp-cli/core-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/core-command/issues" target="_blank">25 issues</a>, <a href="https://github.com/wp-cli/core-command/pulls" target="_blank">5 pull requests</a></li>
-							<li>
-								Active:
-																	<em>None</em>
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/core-command/releases/tag/v2.1.22" target="_blank">v2.1.22</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/core-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/core-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/cron-command" target="_blank">wp-cli/cron-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/cron-command/issues" target="_blank">5 issues</a>, <a href="https://github.com/wp-cli/cron-command/pulls" target="_blank">0 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/cron-command/milestone/25" target="_blank">v2.3.3</a> (0 open, 1 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/cron-command/releases/tag/v2.3.2" target="_blank">v2.3.2</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/cron-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/cron-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/db-command" target="_blank">wp-cli/db-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/db-command/issues" target="_blank">17 issues</a>, <a href="https://github.com/wp-cli/db-command/pulls" target="_blank">4 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/db-command/milestone/47" target="_blank">v2.1.4</a> (0 open, 2 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/db-command/releases/tag/v2.1.3" target="_blank">v2.1.3</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/db-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/db-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/dist-archive-command" target="_blank">wp-cli/dist-archive-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/dist-archive-command/issues" target="_blank">4 issues</a>, <a href="https://github.com/wp-cli/dist-archive-command/pulls" target="_blank">1 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/dist-archive-command/milestone/6" target="_blank">v3.1.0</a> (0 open, 7 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/dist-archive-command/releases/tag/v3.0.1" target="_blank">v3.0.1</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/dist-archive-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/dist-archive-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/doctor-command" target="_blank">wp-cli/doctor-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/doctor-command/issues" target="_blank">29 issues</a>, <a href="https://github.com/wp-cli/doctor-command/pulls" target="_blank">1 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/core-command/issues" target="_blank">25 issues</a>, <a href="https://github.com/fp-cli/core-command/pulls" target="_blank">5 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/doctor-command/releases/tag/v2.2.0" target="_blank">v2.2.0</a>
+																	<a href="https://github.com/fp-cli/core-command/releases/tag/v2.1.22" target="_blank">v2.1.22</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/doctor-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/doctor-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/core-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/core-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/embed-command" target="_blank">wp-cli/embed-command</a></td>
+					<td><a href="https://github.com/fp-cli/cron-command" target="_blank">fp-cli/cron-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/embed-command/issues" target="_blank">2 issues</a>, <a href="https://github.com/wp-cli/embed-command/pulls" target="_blank">2 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/cron-command/issues" target="_blank">5 issues</a>, <a href="https://github.com/fp-cli/cron-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/embed-command/milestone/21" target="_blank">v2.1.0</a> (0 open, 2 closed)
+																	<a href="https://github.com/fp-cli/cron-command/milestone/25" target="_blank">v2.3.3</a> (0 open, 1 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/embed-command/releases/tag/v2.0.18" target="_blank">v2.0.18</a>
+																	<a href="https://github.com/fp-cli/cron-command/releases/tag/v2.3.2" target="_blank">v2.3.2</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/embed-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/embed-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/cron-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/cron-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/entity-command" target="_blank">wp-cli/entity-command</a></td>
+					<td><a href="https://github.com/fp-cli/db-command" target="_blank">fp-cli/db-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/entity-command/issues" target="_blank">31 issues</a>, <a href="https://github.com/wp-cli/entity-command/pulls" target="_blank">3 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/db-command/issues" target="_blank">17 issues</a>, <a href="https://github.com/fp-cli/db-command/pulls" target="_blank">4 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/entity-command/milestone/55" target="_blank">v2.8.5</a> (0 open, 2 closed)
+																	<a href="https://github.com/fp-cli/db-command/milestone/47" target="_blank">v2.1.4</a> (0 open, 2 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/entity-command/releases/tag/v2.8.4" target="_blank">v2.8.4</a>
+																	<a href="https://github.com/fp-cli/db-command/releases/tag/v2.1.3" target="_blank">v2.1.3</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/entity-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/entity-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/db-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/db-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/eval-command" target="_blank">wp-cli/eval-command</a></td>
+					<td><a href="https://github.com/fp-cli/dist-archive-command" target="_blank">fp-cli/dist-archive-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/eval-command/issues" target="_blank">3 issues</a>, <a href="https://github.com/wp-cli/eval-command/pulls" target="_blank">1 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/dist-archive-command/issues" target="_blank">4 issues</a>, <a href="https://github.com/fp-cli/dist-archive-command/pulls" target="_blank">1 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/eval-command/milestone/26" target="_blank">v2.2.7</a> (0 open, 1 closed)
+																	<a href="https://github.com/fp-cli/dist-archive-command/milestone/6" target="_blank">v3.1.0</a> (0 open, 7 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/eval-command/releases/tag/v2.2.6" target="_blank">v2.2.6</a>
+																	<a href="https://github.com/fp-cli/dist-archive-command/releases/tag/v3.0.1" target="_blank">v3.0.1</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/eval-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/eval-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/dist-archive-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/dist-archive-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/export-command" target="_blank">wp-cli/export-command</a></td>
+					<td><a href="https://github.com/fp-cli/doctor-command" target="_blank">fp-cli/doctor-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/export-command/issues" target="_blank">6 issues</a>, <a href="https://github.com/wp-cli/export-command/pulls" target="_blank">3 pull requests</a></li>
-							<li>
-								Active:
-																	<em>None</em>
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/export-command/releases/tag/v2.1.14" target="_blank">v2.1.14</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/export-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/export-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/extension-command" target="_blank">wp-cli/extension-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/extension-command/issues" target="_blank">35 issues</a>, <a href="https://github.com/wp-cli/extension-command/pulls" target="_blank">1 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/doctor-command/issues" target="_blank">29 issues</a>, <a href="https://github.com/fp-cli/doctor-command/pulls" target="_blank">1 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/extension-command/releases/tag/v2.2.0" target="_blank">v2.2.0</a>
+																	<a href="https://github.com/fp-cli/doctor-command/releases/tag/v2.2.0" target="_blank">v2.2.0</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/extension-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/extension-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/doctor-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/doctor-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/find-command" target="_blank">wp-cli/find-command</a></td>
+					<td><a href="https://github.com/fp-cli/embed-command" target="_blank">fp-cli/embed-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/find-command/issues" target="_blank">1 issues</a>, <a href="https://github.com/wp-cli/find-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/embed-command/issues" target="_blank">2 issues</a>, <a href="https://github.com/fp-cli/embed-command/pulls" target="_blank">2 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/find-command/milestone/13" target="_blank">v2.0.5</a> (0 open, 5 closed)
+																	<a href="https://github.com/fp-cli/embed-command/milestone/21" target="_blank">v2.1.0</a> (0 open, 2 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/find-command/releases/tag/v2.0.4" target="_blank">v2.0.4</a>
+																	<a href="https://github.com/fp-cli/embed-command/releases/tag/v2.0.18" target="_blank">v2.0.18</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/find-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/find-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/embed-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/embed-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/i18n-command" target="_blank">wp-cli/i18n-command</a></td>
+					<td><a href="https://github.com/fp-cli/entity-command" target="_blank">fp-cli/entity-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/i18n-command/issues" target="_blank">17 issues</a>, <a href="https://github.com/wp-cli/i18n-command/pulls" target="_blank">3 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/entity-command/issues" target="_blank">31 issues</a>, <a href="https://github.com/fp-cli/entity-command/pulls" target="_blank">3 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/i18n-command/milestone/36" target="_blank">v2.6.6</a> (0 open, 2 closed)
+																	<a href="https://github.com/fp-cli/entity-command/milestone/55" target="_blank">v2.8.5</a> (0 open, 2 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/i18n-command/releases/tag/v2.6.5" target="_blank">v2.6.5</a>
+																	<a href="https://github.com/fp-cli/entity-command/releases/tag/v2.8.4" target="_blank">v2.8.4</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/i18n-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/i18n-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/entity-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/entity-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/import-command" target="_blank">wp-cli/import-command</a></td>
+					<td><a href="https://github.com/fp-cli/eval-command" target="_blank">fp-cli/eval-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/import-command/issues" target="_blank">5 issues</a>, <a href="https://github.com/wp-cli/import-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/eval-command/issues" target="_blank">3 issues</a>, <a href="https://github.com/fp-cli/eval-command/pulls" target="_blank">1 pull requests</a></li>
 							<li>
 								Active:
-																	<em>None</em>
+																	<a href="https://github.com/fp-cli/eval-command/milestone/26" target="_blank">v2.2.7</a> (0 open, 1 closed)
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/import-command/releases/tag/v2.0.14" target="_blank">v2.0.14</a>
+																	<a href="https://github.com/fp-cli/eval-command/releases/tag/v2.2.6" target="_blank">v2.2.6</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/import-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/import-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/eval-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/eval-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/language-command" target="_blank">wp-cli/language-command</a></td>
+					<td><a href="https://github.com/fp-cli/export-command" target="_blank">fp-cli/export-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/language-command/issues" target="_blank">6 issues</a>, <a href="https://github.com/wp-cli/language-command/pulls" target="_blank">1 pull requests</a></li>
-							<li>
-								Active:
-																	<em>None</em>
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/language-command/releases/tag/v2.0.25" target="_blank">v2.0.25</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/language-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/language-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/maintenance-mode-command" target="_blank">wp-cli/maintenance-mode-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/maintenance-mode-command/issues" target="_blank">2 issues</a>, <a href="https://github.com/wp-cli/maintenance-mode-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/export-command/issues" target="_blank">6 issues</a>, <a href="https://github.com/fp-cli/export-command/pulls" target="_blank">3 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/maintenance-mode-command/releases/tag/v2.1.3" target="_blank">v2.1.3</a>
+																	<a href="https://github.com/fp-cli/export-command/releases/tag/v2.1.14" target="_blank">v2.1.14</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/maintenance-mode-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/maintenance-mode-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/export-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/export-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/media-command" target="_blank">wp-cli/media-command</a></td>
+					<td><a href="https://github.com/fp-cli/extension-command" target="_blank">fp-cli/extension-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/media-command/issues" target="_blank">18 issues</a>, <a href="https://github.com/wp-cli/media-command/pulls" target="_blank">2 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/extension-command/issues" target="_blank">35 issues</a>, <a href="https://github.com/fp-cli/extension-command/pulls" target="_blank">1 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/media-command/releases/tag/v2.2.2" target="_blank">v2.2.2</a>
+																	<a href="https://github.com/fp-cli/extension-command/releases/tag/v2.2.0" target="_blank">v2.2.0</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/media-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/media-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/extension-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/extension-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/package-command" target="_blank">wp-cli/package-command</a></td>
+					<td><a href="https://github.com/fp-cli/find-command" target="_blank">fp-cli/find-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/package-command/issues" target="_blank">10 issues</a>, <a href="https://github.com/wp-cli/package-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/find-command/issues" target="_blank">1 issues</a>, <a href="https://github.com/fp-cli/find-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/find-command/milestone/13" target="_blank">v2.0.5</a> (0 open, 5 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/find-command/releases/tag/v2.0.4" target="_blank">v2.0.4</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/find-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/find-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/i18n-command" target="_blank">fp-cli/i18n-command</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/i18n-command/issues" target="_blank">17 issues</a>, <a href="https://github.com/fp-cli/i18n-command/pulls" target="_blank">3 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/i18n-command/milestone/36" target="_blank">v2.6.6</a> (0 open, 2 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/i18n-command/releases/tag/v2.6.5" target="_blank">v2.6.5</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/i18n-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/i18n-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/import-command" target="_blank">fp-cli/import-command</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/import-command/issues" target="_blank">5 issues</a>, <a href="https://github.com/fp-cli/import-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/package-command/releases/tag/v2.6.1" target="_blank">v2.6.1</a>
+																	<a href="https://github.com/fp-cli/import-command/releases/tag/v2.0.14" target="_blank">v2.0.14</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/package-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/package-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/import-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/import-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/php-cli-tools" target="_blank">wp-cli/php-cli-tools</a></td>
+					<td><a href="https://github.com/fp-cli/language-command" target="_blank">fp-cli/language-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/php-cli-tools/issues" target="_blank">7 issues</a>, <a href="https://github.com/wp-cli/php-cli-tools/pulls" target="_blank">2 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/language-command/issues" target="_blank">6 issues</a>, <a href="https://github.com/fp-cli/language-command/pulls" target="_blank">1 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/php-cli-tools/releases/tag/v0.12.5" target="_blank">v0.12.5</a>
+																	<a href="https://github.com/fp-cli/language-command/releases/tag/v2.0.25" target="_blank">v2.0.25</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/php-cli-tools/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/php-cli-tools/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/language-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/language-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/profile-command" target="_blank">wp-cli/profile-command</a></td>
+					<td><a href="https://github.com/fp-cli/maintenance-mode-command" target="_blank">fp-cli/maintenance-mode-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/profile-command/issues" target="_blank">17 issues</a>, <a href="https://github.com/wp-cli/profile-command/pulls" target="_blank">0 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/profile-command/milestone/11" target="_blank">v2.1.5</a> (0 open, 3 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/profile-command/releases/tag/v2.1.4" target="_blank">v2.1.4</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/profile-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/profile-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/restful" target="_blank">wp-cli/restful</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/restful/issues" target="_blank">3 issues</a>, <a href="https://github.com/wp-cli/restful/pulls" target="_blank">0 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/restful/milestone/4" target="_blank">v0.4.0</a> (0 open, 8 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/restful/releases/tag/v0.3.0" target="_blank">v0.3.0</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/restful/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/restful/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/rewrite-command" target="_blank">wp-cli/rewrite-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/rewrite-command/issues" target="_blank">2 issues</a>, <a href="https://github.com/wp-cli/rewrite-command/pulls" target="_blank">0 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/rewrite-command/milestone/22" target="_blank">v2.0.16</a> (0 open, 2 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/rewrite-command/releases/tag/v2.0.15" target="_blank">v2.0.15</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/rewrite-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/rewrite-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/role-command" target="_blank">wp-cli/role-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/role-command/issues" target="_blank">0 issues</a>, <a href="https://github.com/wp-cli/role-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/maintenance-mode-command/issues" target="_blank">2 issues</a>, <a href="https://github.com/fp-cli/maintenance-mode-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/role-command/releases/tag/v2.0.16" target="_blank">v2.0.16</a>
+																	<a href="https://github.com/fp-cli/maintenance-mode-command/releases/tag/v2.1.3" target="_blank">v2.1.3</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/role-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/role-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/maintenance-mode-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/maintenance-mode-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/scaffold-command" target="_blank">wp-cli/scaffold-command</a></td>
+					<td><a href="https://github.com/fp-cli/media-command" target="_blank">fp-cli/media-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/scaffold-command/issues" target="_blank">25 issues</a>, <a href="https://github.com/wp-cli/scaffold-command/pulls" target="_blank">2 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/media-command/issues" target="_blank">18 issues</a>, <a href="https://github.com/fp-cli/media-command/pulls" target="_blank">2 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/scaffold-command/releases/tag/v2.5.1" target="_blank">v2.5.1</a>
+																	<a href="https://github.com/fp-cli/media-command/releases/tag/v2.2.2" target="_blank">v2.2.2</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/scaffold-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/scaffold-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/media-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/media-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/scaffold-package-command" target="_blank">wp-cli/scaffold-package-command</a></td>
+					<td><a href="https://github.com/fp-cli/package-command" target="_blank">fp-cli/package-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/scaffold-package-command/issues" target="_blank">10 issues</a>, <a href="https://github.com/wp-cli/scaffold-package-command/pulls" target="_blank">0 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/scaffold-package-command/milestone/13" target="_blank">v2.1.1</a> (0 open, 8 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/scaffold-package-command/releases/tag/v2.1.0" target="_blank">v2.1.0</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/scaffold-package-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/scaffold-package-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/search-replace-command" target="_blank">wp-cli/search-replace-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/search-replace-command/issues" target="_blank">20 issues</a>, <a href="https://github.com/wp-cli/search-replace-command/pulls" target="_blank">0 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/search-replace-command/milestone/43" target="_blank">v2.1.9</a> (0 open, 1 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/search-replace-command/releases/tag/v2.1.8" target="_blank">v2.1.8</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/search-replace-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/search-replace-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/server-command" target="_blank">wp-cli/server-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/server-command/issues" target="_blank">4 issues</a>, <a href="https://github.com/wp-cli/server-command/pulls" target="_blank">0 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/server-command/milestone/26" target="_blank">v2.0.16</a> (0 open, 1 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/server-command/releases/tag/v2.0.15" target="_blank">v2.0.15</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/server-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/server-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/shell-command" target="_blank">wp-cli/shell-command</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/shell-command/issues" target="_blank">6 issues</a>, <a href="https://github.com/wp-cli/shell-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/package-command/issues" target="_blank">10 issues</a>, <a href="https://github.com/fp-cli/package-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/shell-command/releases/tag/v2.0.16" target="_blank">v2.0.16</a>
+																	<a href="https://github.com/fp-cli/package-command/releases/tag/v2.6.1" target="_blank">v2.6.1</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/shell-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/shell-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/package-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/package-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/super-admin-command" target="_blank">wp-cli/super-admin-command</a></td>
+					<td><a href="https://github.com/fp-cli/php-cli-tools" target="_blank">fp-cli/php-cli-tools</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/super-admin-command/issues" target="_blank">0 issues</a>, <a href="https://github.com/wp-cli/super-admin-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/php-cli-tools/issues" target="_blank">7 issues</a>, <a href="https://github.com/fp-cli/php-cli-tools/pulls" target="_blank">2 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/super-admin-command/releases/tag/v2.0.16" target="_blank">v2.0.16</a>
+																	<a href="https://github.com/fp-cli/php-cli-tools/releases/tag/v0.12.5" target="_blank">v0.12.5</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/super-admin-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/super-admin-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/php-cli-tools/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/php-cli-tools/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/widget-command" target="_blank">wp-cli/widget-command</a></td>
+					<td><a href="https://github.com/fp-cli/profile-command" target="_blank">fp-cli/profile-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/widget-command/issues" target="_blank">3 issues</a>, <a href="https://github.com/wp-cli/widget-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/profile-command/issues" target="_blank">17 issues</a>, <a href="https://github.com/fp-cli/profile-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/profile-command/milestone/11" target="_blank">v2.1.5</a> (0 open, 3 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/profile-command/releases/tag/v2.1.4" target="_blank">v2.1.4</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/profile-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/profile-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/restful" target="_blank">fp-cli/restful</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/restful/issues" target="_blank">3 issues</a>, <a href="https://github.com/fp-cli/restful/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/restful/milestone/4" target="_blank">v0.4.0</a> (0 open, 8 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/restful/releases/tag/v0.3.0" target="_blank">v0.3.0</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/restful/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/restful/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/rewrite-command" target="_blank">fp-cli/rewrite-command</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/rewrite-command/issues" target="_blank">2 issues</a>, <a href="https://github.com/fp-cli/rewrite-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/rewrite-command/milestone/22" target="_blank">v2.0.16</a> (0 open, 2 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/rewrite-command/releases/tag/v2.0.15" target="_blank">v2.0.15</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/rewrite-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/rewrite-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/role-command" target="_blank">fp-cli/role-command</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/role-command/issues" target="_blank">0 issues</a>, <a href="https://github.com/fp-cli/role-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/widget-command/releases/tag/v2.1.12" target="_blank">v2.1.12</a>
+																	<a href="https://github.com/fp-cli/role-command/releases/tag/v2.0.16" target="_blank">v2.0.16</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/widget-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/widget-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/role-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/role-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/wp-cli" target="_blank">wp-cli/wp-cli</a></td>
+					<td><a href="https://github.com/fp-cli/scaffold-command" target="_blank">fp-cli/scaffold-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/wp-cli/issues" target="_blank">145 issues</a>, <a href="https://github.com/wp-cli/wp-cli/pulls" target="_blank">11 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/wp-cli/milestone/70" target="_blank">v3.0.0</a> (11 open, 4 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/wp-cli/releases/tag/v2.12.0" target="_blank">v2.12.0</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/wp-cli/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/wp-cli/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/wp-cli-bundle" target="_blank">wp-cli/wp-cli-bundle</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/wp-cli-bundle/issues" target="_blank">2 issues</a>, <a href="https://github.com/wp-cli/wp-cli-bundle/pulls" target="_blank">2 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/wp-cli-bundle/milestone/17" target="_blank">v2.13.0</a> (0 open, 4 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/wp-cli-bundle/releases/tag/v2.12.0" target="_blank">v2.12.0</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-													<a href="https://github.com/wp-cli/wp-cli-bundle/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/wp-cli-bundle/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/wp-cli-dev" target="_blank">wp-cli/wp-cli-dev</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/wp-cli-dev/issues" target="_blank">3 issues</a>, <a href="https://github.com/wp-cli/wp-cli-dev/pulls" target="_blank">0 pull requests</a></li>
-							<li>
-								Active:
-																	<a href="https://github.com/wp-cli/wp-cli-dev/milestone/2" target="_blank">v2.0.1</a> (0 open, 13 closed)
-															</li>
-							<li>
-								Latest:
-																	<a href="https://github.com/wp-cli/wp-cli-dev/releases/tag/v2.0.0" target="_blank">v2.0.0</a>
-															</li>
-						</ul>
-					</td>
-					<td>
-											</td>
-				</tr>
-							<tr>
-					<td><a href="https://github.com/wp-cli/wp-cli-tests" target="_blank">wp-cli/wp-cli-tests</a></td>
-					<td>
-						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/wp-cli-tests/issues" target="_blank">10 issues</a>, <a href="https://github.com/wp-cli/wp-cli-tests/pulls" target="_blank">2 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/scaffold-command/issues" target="_blank">25 issues</a>, <a href="https://github.com/fp-cli/scaffold-command/pulls" target="_blank">2 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/wp-cli-tests/releases/tag/v5.0.1" target="_blank">v5.0.1</a>
+																	<a href="https://github.com/fp-cli/scaffold-command/releases/tag/v2.5.1" target="_blank">v2.5.1</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/wp-cli-tests/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/wp-cli-tests/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/scaffold-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/scaffold-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/wp-cli.github.com" target="_blank">wp-cli/wp-cli.github.com</a></td>
+					<td><a href="https://github.com/fp-cli/scaffold-package-command" target="_blank">fp-cli/scaffold-package-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/wp-cli.github.com/issues" target="_blank">0 issues</a>, <a href="https://github.com/wp-cli/wp-cli.github.com/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/scaffold-package-command/issues" target="_blank">10 issues</a>, <a href="https://github.com/fp-cli/scaffold-package-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/scaffold-package-command/milestone/13" target="_blank">v2.1.1</a> (0 open, 8 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/scaffold-package-command/releases/tag/v2.1.0" target="_blank">v2.1.0</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/scaffold-package-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/scaffold-package-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/search-replace-command" target="_blank">fp-cli/search-replace-command</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/search-replace-command/issues" target="_blank">20 issues</a>, <a href="https://github.com/fp-cli/search-replace-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/search-replace-command/milestone/43" target="_blank">v2.1.9</a> (0 open, 1 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/search-replace-command/releases/tag/v2.1.8" target="_blank">v2.1.8</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/search-replace-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/search-replace-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/server-command" target="_blank">fp-cli/server-command</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/server-command/issues" target="_blank">4 issues</a>, <a href="https://github.com/fp-cli/server-command/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/server-command/milestone/26" target="_blank">v2.0.16</a> (0 open, 1 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/server-command/releases/tag/v2.0.15" target="_blank">v2.0.15</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/server-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/server-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/shell-command" target="_blank">fp-cli/shell-command</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/shell-command/issues" target="_blank">6 issues</a>, <a href="https://github.com/fp-cli/shell-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/wp-cli.github.com/releases/tag/v1.4.0" target="_blank">v1.4.0</a>
+																	<a href="https://github.com/fp-cli/shell-command/releases/tag/v2.0.16" target="_blank">v2.0.16</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/wp-cli.github.com/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/wp-cli.github.com/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/shell-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/shell-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/wp-config-transformer" target="_blank">wp-cli/wp-config-transformer</a></td>
+					<td><a href="https://github.com/fp-cli/super-admin-command" target="_blank">fp-cli/super-admin-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/wp-config-transformer/issues" target="_blank">0 issues</a>, <a href="https://github.com/wp-cli/wp-config-transformer/pulls" target="_blank">1 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/super-admin-command/issues" target="_blank">0 issues</a>, <a href="https://github.com/fp-cli/super-admin-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
 																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/wp-config-transformer/releases/tag/v1.4.2" target="_blank">v1.4.2</a>
+																	<a href="https://github.com/fp-cli/super-admin-command/releases/tag/v2.0.16" target="_blank">v2.0.16</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/wp-config-transformer/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/wp-config-transformer/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/super-admin-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/super-admin-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 							<tr>
-					<td><a href="https://github.com/wp-cli/wp-super-cache-cli" target="_blank">wp-cli/wp-super-cache-cli</a></td>
+					<td><a href="https://github.com/fp-cli/widget-command" target="_blank">fp-cli/widget-command</a></td>
 					<td>
 						<ul>
-							<li>Project: <a href="https://github.com/wp-cli/wp-super-cache-cli/issues" target="_blank">6 issues</a>, <a href="https://github.com/wp-cli/wp-super-cache-cli/pulls" target="_blank">0 pull requests</a></li>
+							<li>Project: <a href="https://github.com/fp-cli/widget-command/issues" target="_blank">3 issues</a>, <a href="https://github.com/fp-cli/widget-command/pulls" target="_blank">0 pull requests</a></li>
 							<li>
 								Active:
-																	<a href="https://github.com/wp-cli/wp-super-cache-cli/milestone/2" target="_blank">v2.0.1</a> (0 open, 1 closed)
+																	<em>None</em>
 															</li>
 							<li>
 								Latest:
-																	<a href="https://github.com/wp-cli/wp-super-cache-cli/releases/tag/v2.0.0" target="_blank">v2.0.0</a>
+																	<a href="https://github.com/fp-cli/widget-command/releases/tag/v2.1.12" target="_blank">v2.1.12</a>
 															</li>
 						</ul>
 					</td>
 					<td>
-													<a href="https://github.com/wp-cli/wp-super-cache-cli/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/wp-cli/wp-super-cache-cli/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+													<a href="https://github.com/fp-cli/widget-command/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/widget-command/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/fp-cli" target="_blank">fp-cli/fp-cli</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/fp-cli/issues" target="_blank">145 issues</a>, <a href="https://github.com/fp-cli/fp-cli/pulls" target="_blank">11 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/fp-cli/milestone/70" target="_blank">v3.0.0</a> (11 open, 4 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/fp-cli/releases/tag/v2.12.0" target="_blank">v2.12.0</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/fp-cli/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/fp-cli/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/fp-cli-bundle" target="_blank">fp-cli/fp-cli-bundle</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/fp-cli-bundle/issues" target="_blank">2 issues</a>, <a href="https://github.com/fp-cli/fp-cli-bundle/pulls" target="_blank">2 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/fp-cli-bundle/milestone/17" target="_blank">v2.13.0</a> (0 open, 4 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/fp-cli-bundle/releases/tag/v2.12.0" target="_blank">v2.12.0</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/fp-cli-bundle/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/fp-cli-bundle/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/fp-cli-dev" target="_blank">fp-cli/fp-cli-dev</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/fp-cli-dev/issues" target="_blank">3 issues</a>, <a href="https://github.com/fp-cli/fp-cli-dev/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/fp-cli-dev/milestone/2" target="_blank">v2.0.1</a> (0 open, 13 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/fp-cli-dev/releases/tag/v2.0.0" target="_blank">v2.0.0</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/fp-cli-tests" target="_blank">fp-cli/fp-cli-tests</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/fp-cli-tests/issues" target="_blank">10 issues</a>, <a href="https://github.com/fp-cli/fp-cli-tests/pulls" target="_blank">2 pull requests</a></li>
+							<li>
+								Active:
+																	<em>None</em>
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/fp-cli-tests/releases/tag/v5.0.1" target="_blank">v5.0.1</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/fp-cli-tests/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/fp-cli-tests/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/fp-cli.github.com" target="_blank">fp-cli/fp-cli.github.com</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/fp-cli.github.com/issues" target="_blank">0 issues</a>, <a href="https://github.com/fp-cli/fp-cli.github.com/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<em>None</em>
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/fp-cli.github.com/releases/tag/v1.4.0" target="_blank">v1.4.0</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/fp-cli.github.com/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/fp-cli.github.com/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/fp-config-transformer" target="_blank">fp-cli/fp-config-transformer</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/fp-config-transformer/issues" target="_blank">0 issues</a>, <a href="https://github.com/fp-cli/fp-config-transformer/pulls" target="_blank">1 pull requests</a></li>
+							<li>
+								Active:
+																	<em>None</em>
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/fp-config-transformer/releases/tag/v1.4.2" target="_blank">v1.4.2</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/fp-config-transformer/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/fp-config-transformer/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
+											</td>
+				</tr>
+							<tr>
+					<td><a href="https://github.com/fp-cli/fp-super-cache-cli" target="_blank">fp-cli/fp-super-cache-cli</a></td>
+					<td>
+						<ul>
+							<li>Project: <a href="https://github.com/fp-cli/fp-super-cache-cli/issues" target="_blank">6 issues</a>, <a href="https://github.com/fp-cli/fp-super-cache-cli/pulls" target="_blank">0 pull requests</a></li>
+							<li>
+								Active:
+																	<a href="https://github.com/fp-cli/fp-super-cache-cli/milestone/2" target="_blank">v2.0.1</a> (0 open, 1 closed)
+															</li>
+							<li>
+								Latest:
+																	<a href="https://github.com/fp-cli/fp-super-cache-cli/releases/tag/v2.0.0" target="_blank">v2.0.0</a>
+															</li>
+						</ul>
+					</td>
+					<td>
+													<a href="https://github.com/fp-cli/fp-super-cache-cli/actions/workflows/testing.yml" target="_blank"><img height="20px" src="https://github.com/fp-cli/fp-super-cache-cli/actions/workflows/testing.yml/badge.svg" alt="Testing" style="max-width: 100%;"></a>
 											</td>
 				</tr>
 						</tbody>

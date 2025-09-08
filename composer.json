@@ -1,8 +1,8 @@
 {
-    "name": "wp-cli/dashboard",
+    "name": "fp-cli/dashboard",
     "type": "project",
     "license": "MIT",
     "require": {
-        "wp-cli/wp-cli": "^2.5"
+        "fp-cli/fp-cli": "^2.5"
     }
 }

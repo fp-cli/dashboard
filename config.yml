@@ -1,61 +1,61 @@
 github_data:
   open_issues:
     label: Open Issues
-    search: is:open org:wp-cli is:issue sort:updated-desc
+    search: is:open org:fp-cli is:issue sort:updated-desc
   open_issues_no_label:
     label: Open Issues Without Label
-    search: is:open org:wp-cli is:issue sort:created-desc no:label
+    search: is:open org:fp-cli is:issue sort:created-desc no:label
   open_issues_label_bug:
     label: Open Bugs
-    search: is:open org:wp-cli is:issue sort:created-desc label:bug
+    search: is:open org:fp-cli is:issue sort:created-desc label:bug
   open_issues_good_first_issue:
     label: Good First Issues
-    search: is:open org:wp-cli is:issue sort:created-desc label:good-first-issue
+    search: is:open org:fp-cli is:issue sort:created-desc label:good-first-issue
   open_pull_requests:
     label: Open Pull Requests
-    search: is:open sort:updated-desc org:wp-cli is:pr
+    search: is:open sort:updated-desc org:fp-cli is:pr
   open_pull_requests_awaiting_review:
     label: Open Pull Requests Awaiting Review
-    search: is:open sort:updated-desc org:wp-cli is:pr team-review-requested:wp-cli/committers
+    search: is:open sort:updated-desc org:fp-cli is:pr team-review-requested:fp-cli/committers
 github_repositories:
-  - wp-cli/automated-tests
-  - wp-cli/admin-command
-  - wp-cli/cache-command
-  - wp-cli/checksum-command
-  - wp-cli/config-command
-  - wp-cli/core-command
-  - wp-cli/cron-command
-  - wp-cli/db-command
-  - wp-cli/dist-archive-command
-  - wp-cli/doctor-command
-  - wp-cli/embed-command
-  - wp-cli/entity-command
-  - wp-cli/eval-command
-  - wp-cli/export-command
-  - wp-cli/extension-command
-  - wp-cli/find-command
-  - wp-cli/i18n-command
-  - wp-cli/import-command
-  - wp-cli/language-command
-  - wp-cli/maintenance-mode-command
-  - wp-cli/media-command
-  - wp-cli/package-command
-  - wp-cli/php-cli-tools
-  - wp-cli/profile-command
-  - wp-cli/restful
-  - wp-cli/rewrite-command
-  - wp-cli/role-command
-  - wp-cli/scaffold-command
-  - wp-cli/scaffold-package-command
-  - wp-cli/search-replace-command
-  - wp-cli/server-command
-  - wp-cli/shell-command
-  - wp-cli/super-admin-command
-  - wp-cli/widget-command
-  - wp-cli/wp-cli
-  - wp-cli/wp-cli-bundle
-  - wp-cli/wp-cli-dev
-  - wp-cli/wp-cli-tests
-  - wp-cli/wp-cli.github.com
-  - wp-cli/wp-config-transformer
-  - wp-cli/wp-super-cache-cli
+  - fp-cli/automated-tests
+  - fp-cli/admin-command
+  - fp-cli/cache-command
+  - fp-cli/checksum-command
+  - fp-cli/config-command
+  - fp-cli/core-command
+  - fp-cli/cron-command
+  - fp-cli/db-command
+  - fp-cli/dist-archive-command
+  - fp-cli/doctor-command
+  - fp-cli/embed-command
+  - fp-cli/entity-command
+  - fp-cli/eval-command
+  - fp-cli/export-command
+  - fp-cli/extension-command
+  - fp-cli/find-command
+  - fp-cli/i18n-command
+  - fp-cli/import-command
+  - fp-cli/language-command
+  - fp-cli/maintenance-mode-command
+  - fp-cli/media-command
+  - fp-cli/package-command
+  - fp-cli/php-cli-tools
+  - fp-cli/profile-command
+  - fp-cli/restful
+  - fp-cli/rewrite-command
+  - fp-cli/role-command
+  - fp-cli/scaffold-command
+  - fp-cli/scaffold-package-command
+  - fp-cli/search-replace-command
+  - fp-cli/server-command
+  - fp-cli/shell-command
+  - fp-cli/super-admin-command
+  - fp-cli/widget-command
+  - fp-cli/fp-cli
+  - fp-cli/fp-cli-bundle
+  - fp-cli/fp-cli-dev
+  - fp-cli/fp-cli-tests
+  - fp-cli/fp-cli.github.com
+  - fp-cli/fp-config-transformer
+  - fp-cli/fp-super-cache-cli

@@ -11,7 +11,7 @@ if ( empty( $key ) ) {
 
 $data = array();
 $labels = array();
-foreach ( glob( WP_CLI_DASHBOARD_BASE_DIR . '/github-data/' . $key . '/*' ) as $file ) {
+foreach ( glob( FP_CLI_DASHBOARD_BASE_DIR . '/github-data/' . $key . '/*' ) as $file ) {
 	$datetime = basename( $file );
 	$timestamp = strtotime( $datetime );
 	if ( strtotime( gmdate( 'Y-m-d 00:00:00', $timestamp ) ) > strtotime( '3 days ago', strtotime( gmdate( 'Y-m-d 00:00:00' ) ) ) ) {

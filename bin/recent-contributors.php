@@ -21,12 +21,12 @@
  *  - json
  * --- 
  *
- * @when before_wp_load
+ * @when before_fp_load
  */
-function wp_cli_dashboard_recent_contributors( $args, $assoc_args ) {
+function fp_cli_dashboard_recent_contributors( $args, $assoc_args ) {
 
 	$recent_contributors = [];
-	foreach ( glob( WP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
+	foreach ( glob( FP_CLI_DASHBOARD_BASE_DIR . '/github-data/contributors/*' ) as $file ) {
 		$contributor   = basename( $file );
 		$dates         = explode( PHP_EOL, file_get_contents( $file ) );
 		$is_recent     = false;
@@ -43,7 +43,7 @@ function wp_cli_dashboard_recent_contributors( $args, $assoc_args ) {
 		}
 	}
 
-	WP_CLI\Utils\format_items( $assoc_args['format'], $recent_contributors, array( 'contributor' ) );
+	FP_CLI\Utils\format_items( $assoc_args['format'], $recent_contributors, array( 'contributor' ) );
 }
 
-WP_CLI::add_command( 'dashboard recent-contributors', 'wp_cli_dashboard_recent_contributors' );
+FP_CLI::add_command( 'dashboard recent-contributors', 'fp_cli_dashboard_recent_contributors' );

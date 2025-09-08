@@ -3,16 +3,16 @@
 require_once dirname( __DIR__ ) . '/theme/functions.php';
 
 /**
- * Builds the WP-CLI committer dashboard.
+ * Builds the FP-CLI committer dashboard.
  *
- * @when before_wp_load
+ * @when before_fp_load
  */
-function wp_cli_dashboard_build_dashboard( $args, $assoc_args ) {
+function fp_cli_dashboard_build_dashboard( $args, $assoc_args ) {
 
-	$html = wp_cli_dashboard_get_template_part( 'index' );
+	$html = fp_cli_dashboard_get_template_part( 'index' );
 
-	file_put_contents( WP_CLI_DASHBOARD_BASE_DIR . '/index.html', trim( $html ) );
-	WP_CLI::success( 'Dashboard built.' );
+	file_put_contents( FP_CLI_DASHBOARD_BASE_DIR . '/index.html', trim( $html ) );
+	FP_CLI::success( 'Dashboard built.' );
 }
 
-WP_CLI::add_command( 'dashboard build', 'wp_cli_dashboard_build_dashboard' );
+FP_CLI::add_command( 'dashboard build', 'fp_cli_dashboard_build_dashboard' );

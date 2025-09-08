@@ -40,24 +40,24 @@ jobs:
 
       - name: Configure git user
         run: |
-          git config --global user.email "info@wp-cli.org"
-          git config --global user.name "wp-make-coffee"
+          git config --global user.email "info@fp-cli.org"
+          git config --global user.name "fp-make-coffee"
 
-      - name: Install WP-CLI
+      - name: Install FP-CLI
         run: |
-          curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
-          sudo mv wp-cli-nightly.phar /usr/local/bin/wp
-          sudo chmod +x /usr/local/bin/wp
+          curl -O https://raw.githubusercontent.com/fp-cli/builds/gh-pages/phar/fp-cli-nightly.phar
+          sudo mv fp-cli-nightly.phar /usr/local/bin/fp
+          sudo chmod +x /usr/local/bin/fp
 
       - name: Fetch GitHub data
         run: |
-          wp dashboard fetch-github-data
+          fp dashboard fetch-github-data
         env:
           GITHUB_TOKEN: ${{ secrets.MAKE_COFFEE_TOKEN }}
 
       - name: Rebuild dashboard
         run: |
-          wp dashboard build
+          fp dashboard build
 
       - name: Check if there are changes
         run: echo "CHANGES_DETECTED=$([[ -z $(git status --porcelain) ]] && echo "0" || echo "1")" >> $GITHUB_ENV

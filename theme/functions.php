@@ -3,7 +3,7 @@
  * Various functions for the dashboard.
  */
 
-define( 'WP_CLI_DASHBOARD_BASE_DIR', dirname( __DIR__ ) );
+define( 'FP_CLI_DASHBOARD_BASE_DIR', dirname( __DIR__ ) );
 
 /**
  * Get a rendered template part
@@ -12,9 +12,9 @@ define( 'WP_CLI_DASHBOARD_BASE_DIR', dirname( __DIR__ ) );
  * @param array $vars
  * @return string
  */
-function wp_cli_dashboard_get_template_part( $template, $vars = array() ) {
+function fp_cli_dashboard_get_template_part( $template, $vars = array() ) {
 
-	$full_path = WP_CLI_DASHBOARD_BASE_DIR . '/theme/' . $template . '.php';
+	$full_path = FP_CLI_DASHBOARD_BASE_DIR . '/theme/' . $template . '.php';
 
 	if ( ! file_exists( $full_path ) ) {
 		return '';
@@ -36,10 +36,10 @@ function wp_cli_dashboard_get_template_part( $template, $vars = array() ) {
  * @param string $key Config key
  * @return mixed
  */
-function wp_cli_dashboard_get_config_data( $key ) {
-	$config_file = WP_CLI_DASHBOARD_BASE_DIR . '/config.yml';
+function fp_cli_dashboard_get_config_data( $key ) {
+	$config_file = FP_CLI_DASHBOARD_BASE_DIR . '/config.yml';
 	if ( ! file_exists( $config_file ) ) {
-		WP_CLI::error( 'Unable to load ./config.yml' );
+		FP_CLI::error( 'Unable to load ./config.yml' );
 	}
 
 	$config = Spyc::YAMLLoad( $config_file );

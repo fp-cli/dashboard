@@ -1,2 +1,2 @@
-wp-cli-dashboard
+fp-cli-dashboard
 ================

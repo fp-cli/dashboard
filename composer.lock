@@ -61,12 +61,12 @@
             "version": "v1.8.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/WordPress/Requests.git",
+                "url": "https://github.com/FinPress/Requests.git",
                 "reference": "82e6936366eac3af4d836c18b9d8c31028fe4cd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/Requests/zipball/82e6936366eac3af4d836c18b9d8c31028fe4cd5",
+                "url": "https://api.github.com/repos/FinPress/Requests/zipball/82e6936366eac3af4d836c18b9d8c31028fe4cd5",
                 "reference": "82e6936366eac3af4d836c18b9d8c31028fe4cd5",
                 "shasum": ""
             },
@@ -81,7 +81,7 @@
                 "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.5",
                 "requests/test-server": "dev-master",
                 "squizlabs/php_codesniffer": "^3.5",
-                "wp-coding-standards/wpcs": "^2.0"
+                "fp-coding-standards/fpcs": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -100,7 +100,7 @@
                 }
             ],
             "description": "A HTTP library written in PHP, for human beings.",
-            "homepage": "http://github.com/WordPress/Requests",
+            "homepage": "http://github.com/FinPress/Requests",
             "keywords": [
                 "curl",
                 "fsockopen",
@@ -111,8 +111,8 @@
                 "sockets"
             ],
             "support": {
-                "issues": "https://github.com/WordPress/Requests/issues",
-                "source": "https://github.com/WordPress/Requests/tree/v1.8.1"
+                "issues": "https://github.com/FinPress/Requests/issues",
+                "source": "https://github.com/FinPress/Requests/tree/v1.8.1"
             },
             "time": "2021-06-04T09:56:25+00:00"
         },
@@ -178,16 +178,16 @@
             "time": "2022-07-29T07:39:48+00:00"
         },
         {
-            "name": "wp-cli/mustangostang-spyc",
+            "name": "fp-cli/mustangostang-spyc",
             "version": "0.6.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wp-cli/spyc.git",
+                "url": "https://github.com/fp-cli/spyc.git",
                 "reference": "6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/spyc/zipball/6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7",
+                "url": "https://api.github.com/repos/fp-cli/spyc/zipball/6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7",
                 "reference": "6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7",
                 "shasum": ""
             },
@@ -221,24 +221,24 @@
                     "email": "vlad.andersen@gmail.com"
                 }
             ],
-            "description": "A simple YAML loader/dumper class for PHP (WP-CLI fork)",
+            "description": "A simple YAML loader/dumper class for PHP (FP-CLI fork)",
             "homepage": "https://github.com/mustangostang/spyc/",
             "support": {
-                "source": "https://github.com/wp-cli/spyc/tree/autoload"
+                "source": "https://github.com/fp-cli/spyc/tree/autoload"
             },
             "time": "2017-04-25T11:26:20+00:00"
         },
         {
-            "name": "wp-cli/php-cli-tools",
+            "name": "fp-cli/php-cli-tools",
             "version": "v0.11.16",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wp-cli/php-cli-tools.git",
+                "url": "https://github.com/fp-cli/php-cli-tools.git",
                 "reference": "c32e51a5c9993ad40591bc426b21f5422a5ed293"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/c32e51a5c9993ad40591bc426b21f5422a5ed293",
+                "url": "https://api.github.com/repos/fp-cli/php-cli-tools/zipball/c32e51a5c9993ad40591bc426b21f5422a5ed293",
                 "reference": "c32e51a5c9993ad40591bc426b21f5422a5ed293",
                 "shasum": ""
             },
@@ -271,28 +271,28 @@
                 }
             ],
             "description": "Console utilities for PHP",
-            "homepage": "http://github.com/wp-cli/php-cli-tools",
+            "homepage": "http://github.com/fp-cli/php-cli-tools",
             "keywords": [
                 "cli",
                 "console"
             ],
             "support": {
-                "issues": "https://github.com/wp-cli/php-cli-tools/issues",
-                "source": "https://github.com/wp-cli/php-cli-tools/tree/v0.11.16"
+                "issues": "https://github.com/fp-cli/php-cli-tools/issues",
+                "source": "https://github.com/fp-cli/php-cli-tools/tree/v0.11.16"
             },
             "time": "2022-11-03T15:19:26+00:00"
         },
         {
-            "name": "wp-cli/wp-cli",
+            "name": "fp-cli/fp-cli",
             "version": "v2.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wp-cli/wp-cli.git",
+                "url": "https://github.com/fp-cli/fp-cli.git",
                 "reference": "1ddc754f1c15e56fb2cdd1a4e82bd0ec6ca32a76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/1ddc754f1c15e56fb2cdd1a4e82bd0ec6ca32a76",
+                "url": "https://api.github.com/repos/fp-cli/fp-cli/zipball/1ddc754f1c15e56fb2cdd1a4e82bd0ec6ca32a76",
                 "reference": "1ddc754f1c15e56fb2cdd1a4e82bd0ec6ca32a76",
                 "shasum": ""
             },
@@ -302,24 +302,24 @@
                 "php": "^5.6 || ^7.0 || ^8.0",
                 "rmccue/requests": "^1.8",
                 "symfony/finder": ">2.7",
-                "wp-cli/mustangostang-spyc": "^0.6.3",
-                "wp-cli/php-cli-tools": "~0.11.2"
+                "fp-cli/mustangostang-spyc": "^0.6.3",
+                "fp-cli/php-cli-tools": "~0.11.2"
             },
             "require-dev": {
                 "roave/security-advisories": "dev-latest",
-                "wp-cli/db-command": "^1.3 || ^2",
-                "wp-cli/entity-command": "^1.2 || ^2",
-                "wp-cli/extension-command": "^1.1 || ^2",
-                "wp-cli/package-command": "^1 || ^2",
-                "wp-cli/wp-cli-tests": "^3.1.6"
+                "fp-cli/db-command": "^1.3 || ^2",
+                "fp-cli/entity-command": "^1.2 || ^2",
+                "fp-cli/extension-command": "^1.1 || ^2",
+                "fp-cli/package-command": "^1 || ^2",
+                "fp-cli/fp-cli-tests": "^3.1.6"
             },
             "suggest": {
                 "ext-readline": "Include for a better --prompt implementation",
                 "ext-zip": "Needed to support extraction of ZIP archives when doing downloads or updates"
             },
             "bin": [
-                "bin/wp",
-                "bin/wp.bat"
+                "bin/fp",
+                "bin/fp.bat"
             ],
             "type": "library",
             "extra": {
@@ -329,27 +329,27 @@
             },
             "autoload": {
                 "psr-0": {
-                    "WP_CLI\\": "php/"
+                    "FP_CLI\\": "php/"
                 },
                 "classmap": [
-                    "php/class-wp-cli.php",
-                    "php/class-wp-cli-command.php"
+                    "php/class-fp-cli.php",
+                    "php/class-fp-cli-command.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "WP-CLI framework",
-            "homepage": "https://wp-cli.org",
+            "description": "FP-CLI framework",
+            "homepage": "https://fp-cli.org",
             "keywords": [
                 "cli",
-                "wordpress"
+                "finpress"
             ],
             "support": {
-                "docs": "https://make.wordpress.org/cli/handbook/",
-                "issues": "https://github.com/wp-cli/wp-cli/issues",
-                "source": "https://github.com/wp-cli/wp-cli"
+                "docs": "https://make.finpress.org/cli/handbook/",
+                "issues": "https://github.com/fp-cli/fp-cli/issues",
+                "source": "https://github.com/fp-cli/fp-cli"
             },
             "time": "2022-10-17T23:10:42+00:00"
         }
